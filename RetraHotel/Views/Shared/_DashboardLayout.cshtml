@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Retra Hotel Dashboard</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <link rel="stylesheet" href="~/css/dashboard.css" />
+</head>
+<body>
+    <div class="dashboard-container">
+        <!-- Sidebar -->
+        <div class="sidebar bg-dark text-white">
+            <div class="sidebar-header p-3">
+                <h4>Retra Hotel</h4>
+                <p>Admin Dashboard</p>
+            </div>
+            <ul class="nav flex-column">
+                <li class="nav-item">
+                    <a class="nav-link active" href="/Dashboard">
+                        <i class="fas fa-home me-2"></i>Dashboard
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/Dashboard/Rooms">
+                        <i class="fas fa-bed me-2"></i>Room Management
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/Dashboard/Bookings">
+                        <i class="fas fa-calendar-check me-2"></i>Bookings
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/Dashboard/Guests">
+                        <i class="fas fa-users me-2"></i>Guests
+                    </a>
+                </li>
+                <!-- Add a link to return to the HomePage -->
+                <li class="nav-item">
+                    <a class="nav-link" href="/">
+                        <i class="fas fa-globe me-2"></i>Back to Home
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <!-- Top Navigation Bar -->
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    <i class="fas fa-bell"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    <i class="fas fa-user"></i> Admin
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+            <!-- Page Content -->
+            <div class="container-fluid p-4">
+                @RenderBody()
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

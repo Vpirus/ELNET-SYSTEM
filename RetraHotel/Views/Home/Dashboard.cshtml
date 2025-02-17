@@ -1,0 +1,76 @@
+@{
+    ViewData["Title"] = "Dashboard";
+    Layout = "_DashboardLayout";
+}
+
+<div class="row">
+    <!-- Quick Stats -->
+    <div class="col-md-3">
+        <div class="card bg-primary text-white mb-3">
+            <div class="card-body">
+                <h5 class="card-title">Total Rooms</h5>
+                <p class="card-text">120</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="card bg-success text-white mb-3">
+            <div class="card-body">
+                <h5 class="card-title">Occupied Rooms</h5>
+                <p class="card-text">85</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="card bg-warning text-white mb-3">
+            <div class="card-body">
+                <h5 class="card-title">Pending Bookings</h5>
+                <p class="card-text">15</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="card bg-danger text-white mb-3">
+            <div class="card-body">
+                <h5 class="card-title">Maintenance Requests</h5>
+                <p class="card-text">5</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Recent Bookings -->
+<div class="card mt-4">
+    <div class="card-header">
+        <h5>Recent Bookings</h5>
+    </div>
+    <div class="card-body">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Booking ID</th>
+                    <th>Guest Name</th>
+                    <th>Room Type</th>
+                    <th>Check-In Date</th>
+                    <th>Check-Out Date</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>101</td>
+                    <td>John Doe</td>
+                    <td>Deluxe</td>
+                    <td>2025-02-15</td>
+                    <td>2025-02-20</td>
+                </tr>
+                <tr>
+                    <td>102</td>
+                    <td>Jane Smith</td>
+                    <td>Suite</td>
+                    <td>2025-02-16</td>
+                    <td>2025-02-22</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

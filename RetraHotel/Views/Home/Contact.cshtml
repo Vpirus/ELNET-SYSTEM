@@ -1,0 +1,70 @@
+@{
+    ViewData["Title"] = "Contact Us";
+    Layout = "_Layout";
+}
+
+<!-- Contact Page Content -->
+<div class="container my-5">
+    <h2 class="text-center mb-4">Contact Us</h2>
+    <p class="text-center lead">We'd love to hear from you! Reach out to us for any inquiries or feedback.</p>
+
+    <!-- Contact Form -->
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card shadow">
+                <div class="card-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Your Name</label>
+                            <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Your Email</label>
+                            <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="subject" class="form-label">Subject</label>
+                            <input type="text" class="form-control" id="subject" placeholder="Enter the subject" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Your Message</label>
+                            <textarea class="form-control" id="message" rows="5" placeholder="Enter your message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Information -->
+    <div class="row mt-5">
+        <div class="col-md-4 text-center">
+            <div class="card border-0">
+                <div class="card-body">
+                    <i class="fas fa-map-marker-alt fa-3x mb-3"></i>
+                    <h5>Address</h5>
+                    <p>123 Retra Street, City, Country</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 text-center">
+            <div class="card border-0">
+                <div class="card-body">
+                    <i class="fas fa-phone fa-3x mb-3"></i>
+                    <h5>Phone</h5>
+                    <p>+123 456 7890</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 text-center">
+            <div class="card border-0">
+                <div class="card-body">
+                    <i class="fas fa-envelope fa-3x mb-3"></i>
+                    <h5>Email</h5>
+                    <p>info@retrahotel.com</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
